@@ -13,7 +13,7 @@ agent any
      }
     }
    }
-   stage('input 'Approve') {
+   stage(input 'Approve') {
     steps {
     // Archive the build output artifacts.
      archiveArtifacts artifacts: 'output/*.txt', excludes: 'output/*.md'
